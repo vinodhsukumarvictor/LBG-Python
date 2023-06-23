@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  lbg-python:
+    image: lbg-python:v1
+    build: .
+    ports:
+      - target: 9000
+        published: 80
