@@ -8,7 +8,6 @@ pipeline {
 	stages {
 		stage('cleanup') {
 			steps {
-				sh 'cd LBG-Python/'
 				sh 'sudo chmod +x cleanup.sh'
 				sh './cleanup.sh'
 			}
